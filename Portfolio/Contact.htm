@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Ernest</title>
+    <link rel="icon" type="image/png" href="cat.png">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="cont-con" >
+    <div id="contact">
+        <div class="mid">
+            <p class="Browse-My-Proj mid">You can send me a</p>
+            <h1 class="Proj-title"><span class="Urmessege"></span></h1>
+
+            <!---------------------- Typingfx script ---------------------->
+            <script>typeFx(".Urmessege",["Messege", "Hi", "Hello"])</script>
+            
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fas fa-envelope"></i> ernestneil09@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 0998-303-7810</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Talagtag.Ernest.Niel.P"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_erneeest/"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:ernestneil09@gmail.com"><i class="fab fa-google"></i></a>
+                    </div>
+                    <div class="btn-2">
+                        <a href="cat.png" download>Download CV</a>
+                    </div>
+                    
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input id="name-con" type="text" name="Name" placeholder="Your Name" required>
+                        <input id="email-con" type="email" name="Email" placeholder="Your Email" required>
+                        <textarea id="msg-con" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn-1 con" onclick="wait()">Submit</button>
+                    </form>
+                    <span id="msg"></span></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------- Database Script ---------------------->
+
+
+<script>
+
+        function wait(){
+                msg.innerHTML = "Please wait..."
+
+             db()
+            
+        }
+
+    
+
+</script>
+
+<!--------------------------------------------- footer --------------------------------------------->
+
+<footer class="con-foot">
+
+    <div classContainer>
+        <div class="socialIcons">
+            <a id="f" href="https://www.facebook.com/Talagtag.Ernest.Niel.P" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+            <a id="i" href="https://www.instagram.com/_erneeest/" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+            <a id="y" href="https://www.youtube.com/channel/UChDeqDZmv5pQhTTJ_6pfvJQ" target="_blank"><i class="fa-brands fa-youtube" ></i></a>
+            <a id="g" href="mailto:ernestneil09@gmail.com" target="_blank"><i class="fa-brands fa-google-plus" ></i></a>
+          </div>
+      <div class="footerNav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact Me</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Services</a></li>
+        </ul>
+      </div>
+  </div>
+  <hr>
+  <div class="footerBottom">
+    <p>Ernest Talagtag</p>
+
+  </div>
+</footer>
+
+</body>
+</html>
